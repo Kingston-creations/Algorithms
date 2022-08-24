@@ -16,4 +16,7 @@ coins=list(map(int,input().split()))
 
 sum=int(input())
 
-print(coinSum(coins, sum))
+coinSum(coins, sum)
+l=coinSum(coins, sum)
+l.sort(key=len)
+print(l[0])
